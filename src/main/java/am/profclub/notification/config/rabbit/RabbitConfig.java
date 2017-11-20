@@ -1,4 +1,4 @@
-package am.profclub.notification.integration;
+package am.profclub.notification.config.rabbit;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
@@ -27,11 +27,6 @@ public class RabbitConfig {
 	@Bean
 	public Queue transactionQueue() {
 		return new Queue("pei.transaction.queue", true);
-	}
-
-	@Bean
-	public MessageChannel replyToChannel() {
-		return new NullChannel();
 	}
 
 	@Bean

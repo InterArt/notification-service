@@ -9,8 +9,8 @@
 		<Root level="debug">
 			<AppenderRef ref="Console" />
 		</Root>
-		<Logger name="org.springframework" level="warn" />
-		<Logger name="org.springframework.integration" level="warn" />
+		<Logger name="org.springframework" level="debug" />
+		<Logger name="org.springframework.integration" level="debug" />
 		<Logger name="org.springframework.integration.samples" level="debug" />
 	</Loggers>
 </Configuration>

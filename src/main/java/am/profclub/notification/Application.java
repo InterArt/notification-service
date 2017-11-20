@@ -10,7 +10,7 @@ import am.profclub.notification.integration.EchoGateway;
 /**
  * Created by ARTHUR on 11/12/2017
  */
-@ComponentScan(basePackages = "test.integration")
+@ComponentScan(basePackages = "am.profclub.notification")
 @SpringBootApplication
 public class Application implements CommandLineRunner{
 
@@ -23,6 +23,6 @@ public class Application implements CommandLineRunner{
 
     @Override
     public void run(String... strings) throws Exception {
-        echoGateway.echo("Hello world");
+        //echoGateway.echo("Hello world");
     }
 }
